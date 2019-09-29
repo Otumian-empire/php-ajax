@@ -30,7 +30,7 @@ while ($row = mysqli_fetch_assoc($read_query_result)) {
     $output .= "<td>$row[email]</td>";
     $output .= "<td>$row[number]</td>";
     $output .= "<td><a class='btn btn-sm btn-primary' href='update_data_form.php?id=$row[id]&name=$row[name]&email=$row[email]&number=$row[number]'>update</a></td>";
-    $output .= "<td><a class='btn btn-sm btn-danger' href='delete_data_processor.php'>delete</a></td>";
+    $output .= "<td><a class='btn btn-sm btn-danger' href='delete_data.php?id=$row[id]&name=$row[name]&email=$row[email]&number=$row[number]'>delete</a></td>";
     $output .= "<tr>";
 }
 
